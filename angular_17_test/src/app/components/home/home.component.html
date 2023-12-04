@@ -1,0 +1,5 @@
+@if (userData && userData.userName ) {
+<app-user [UserData]="userData"></app-user>
+} @else {
+<app-guest></app-guest>
+}

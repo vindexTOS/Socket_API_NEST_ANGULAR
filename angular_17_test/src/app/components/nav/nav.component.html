@@ -1,0 +1,26 @@
+<nav class="bg-red-600 w-full h-16 flex items-center justify-between px-4">
+  <a routerLink="/" class="text-white text-lg font-semibold hover:text-gray-300"
+    >Home</a
+  >
+  @If(!userData && !userData.userName) {
+  <div class="flex gap-2">
+    <a
+      routerLink="signin"
+      class="text-white text-lg font-semibold hover:text-gray-300"
+      >Sign In</a
+    >
+    <a
+      routerLink="signup"
+      class="text-white text-lg font-semibold hover:text-gray-300"
+      >Sign Up</a
+    >
+  </div>
+  }@else{
+  <div></div>
+  }
+  <!-- <a
+        routerLink="about"
+        class="text-white text-lg font-semibold hover:text-gray-300"
+        >About</a
+      > -->
+</nav>
